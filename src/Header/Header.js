@@ -3,7 +3,7 @@ import './Header.css';
 
 export default function Header() {
     return(
-        <header class="vertical-center">
+        <header className="header-home">
             <div className="slogan">
                 <h2>See your ballot.</h2>
                 <h2>Read up on questions and candidates.</h2>

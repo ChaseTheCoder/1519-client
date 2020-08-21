@@ -11,9 +11,3 @@
     left: 5%;
     bottom: 5%;
 }
-
-.header-about {
-    z-index: 5;
-    max-width: 100%;
-    display: block;
-}

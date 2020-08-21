@@ -3,13 +3,15 @@ import './App.css';
 import Home from './Pages/Home';
 import Nav from './Nav/Nav';
 import About from './Pages/About';
+import Ballot from './Pages/Ballot';
 
 export default function App() {
   return (
     <div className="App">
       <Nav />
       {/* <Home /> */}
-      <About />
+      {/* <About /> */}
+      <Ballot />
     </div>
   );
 }
