@@ -5,15 +5,20 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: white;
 	z-index: 100;
 }
 
 nav li {
-	display: inline-block;
+  display: inline-block;
+  
 }
 
 nav a {
+  text-decoration: none;
+  color: #2A76FE;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 0.75px;
 	letter-spacing: .05rem;
@@ -22,14 +27,4 @@ nav a {
 	display: inline-block;
 	border-bottom: none;
 	text-transform: uppercase;
-}
-
-.hamburger {
-	display: none;
-}
-
-h1 a,
-h1 a:hover,
-header h2 {
-	color: #fff;
 }
