@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Panel/Panel.css';
 
-export default function Login() {
+export default function FeedPanel() {
     return(
         <div className="panel">
-            <h1>Login</h1>
+            <h1>Feed</h1>
         </div>
     );
 }

@@ -4,6 +4,9 @@ import Home from './Pages/Home';
 import Nav from './Nav/Nav';
 import About from './Pages/About';
 import Ballot from './Pages/Ballot';
+import Feed from './Pages/Feed';
+import Login from './Pages/Login'
+
 
 export default function App() {
   return (
@@ -11,7 +14,9 @@ export default function App() {
       <Nav />
       {/* <Home /> */}
       {/* <About /> */}
-      <Ballot />
+      {/* <Ballot /> */}
+      {/* <Feed /> */}
+      <Login />
     </div>
   );
 }
