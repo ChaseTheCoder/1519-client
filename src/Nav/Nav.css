@@ -1,30 +1,48 @@
 
 /* ------------Nav------------ */
+
 nav {
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+	width: 100vw;
 	z-index: 100;
+	overflow: hidden;
 }
 
 nav li {
   display: inline-block;
-  
+  float: left;
 }
 
 nav a {
   text-decoration: none;
   color: #2A76FE;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-	font-weight: 600;
-	letter-spacing: 0.75px;
-	letter-spacing: .05rem;
-	padding: 3px 60px;
-	padding: .2rem 4rem;
-	display: inline-block;
-	border-bottom: none;
-	text-transform: uppercase;
+  /* font-style: normal; */
+  font-weight: bolder;
+  font-size: 22px;
+  /* font-weight: 600; */
+  /* letter-spacing: 0.75px; */
+  /* letter-spacing: .05rem; */
+  /* padding: 1px 60px; */
+  padding: .2rem 1rem;
+  display: inline-block;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+#logo {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3em;
+}
+
+span {
+	color: #F80D03;
+  }
+
+.route {
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+#route:hover {
+  color: #F80D03;
 }

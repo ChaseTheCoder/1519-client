@@ -6,11 +6,14 @@ export default function Nav() {
         <nav>
             
             <ul>
-                <li><a>1519</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Ballot</a></li>
-                <li><a href="#">Feed</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a id="logo"><span>15</span>19</a></li>
+                <div className="route">
+                    <li><a id="route" href="#">About</a></li>
+                    <li><a id="route" href="#">Ballot</a></li>
+                    <li><a id="route" href="#">Feed</a></li>
+                    <li><a id="route" href="#">Login</a></li>
+                </div>
+
             </ul>
         </nav>
     );
