@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Panel/Panel.css';
 
-export default function Ballot() {
+export default function ProfilePanel() {
     return(
         <div className="panel">
-            <h1>Login</h1>
+            <h1>Profile</h1>
         </div>
     );
 }

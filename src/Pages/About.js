@@ -1,10 +1,14 @@
 import React from 'react';
 import AboutPanel from '../AboutPanel/AboutPanel';
 
-export default function About() {
-    return (
-        <div>
-            <AboutPanel />
-        </div>
-    );
+class About extends React.Component {
+    render() {
+        return (
+            <div>
+                <AboutPanel />
+            </div>
+        );
+    };
 }
+
+export default About;
