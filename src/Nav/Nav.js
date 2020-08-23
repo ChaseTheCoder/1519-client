@@ -6,7 +6,7 @@ export default function Nav() {
     return (
         <nav>
             <ul>
-                <li><NavLink id="logo"><span>15</span>19</NavLink></li>
+                <li><NavLink id="logo" to='/'><span>15</span>19</NavLink></li>
                 <div className="route">
                     <li><NavLink id="route" to="/about">About</NavLink></li>
                     <li><NavLink id="route" to="/ballot">Ballot</NavLink></li>
