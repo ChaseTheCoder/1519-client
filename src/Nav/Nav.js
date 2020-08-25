@@ -7,7 +7,7 @@ export default function Nav() {
         <nav>
             <ul>
                 <li><NavLink id="logo" to='/'><span>15</span>19</NavLink></li>
-                <div className="route">
+                <div className="route-list">
                     <li><NavLink id="route" to="/about">About</NavLink></li>
                     <li><NavLink id="route" to="/ballot">Ballot</NavLink></li>
                     <li><NavLink id="route" to="/feed">Feed</NavLink></li>
