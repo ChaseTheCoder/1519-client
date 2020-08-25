@@ -1,8 +1,9 @@
 import React from 'react';
-import Ballot from '../Ballot/Ballot'
+import { withRouter } from 'react-router-dom';
+import BallotId from '../Ballot/BallotId'
 import BallotModel from '../models/ballot';
 
-class BallotPage extends React.Component {
+class BallotShowPage extends React.Component {
     state = {
         ballot: {},
     };
@@ -17,9 +18,11 @@ class BallotPage extends React.Component {
     }
 
     render() {
-        console.log(this.props);
-        return <Ballot ballot={this.state.ballot} />
+        console.log('it worked');
+        return (
+             <BallotId ballot={this.state.ballot} />
+        );
     }
 }
 
-export default BallotPage;
+export default withRouter(BallotShowPage);

@@ -2,7 +2,7 @@ import React from 'react'
 import BallotModel from '../models/ballot';
 import BallotPanel from '../BallotPanel/BallotPanel';
 
- class BallotsPage extends React.Component {
+ class BallotListPage extends React.Component {
      state = {
          ballots: [],
      }
@@ -10,7 +10,7 @@ import BallotPanel from '../BallotPanel/BallotPanel';
      componentDidMount() {
          BallotModel.getAllBallots()
             .then((result) => {
-                console.log(result);
+                // console.log(result.ballot);
                 this.setState({ballots: result});
             })
             .catch((err) => console.log(err))
@@ -23,4 +23,4 @@ import BallotPanel from '../BallotPanel/BallotPanel';
         
 }
 
-export default BallotsPage;
+export default BallotListPage;
