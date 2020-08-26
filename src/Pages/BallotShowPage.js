@@ -5,6 +5,7 @@ import Articles from '../Articles/Articles';
 import BallotModel from '../models/ballot';
 import ArticleModel from '../models/article';
 import CreateArticleForm from '../Articles/ArticleCreate';
+import News from '../News/News';
 
 class BallotShowPage extends React.Component {
     state = {
@@ -15,37 +16,26 @@ class BallotShowPage extends React.Component {
     componentDidMount() {
         BallotModel.getBallotById(this.props.match.params.id)
             .then((result) => {
-                console.log(result);
+                // console.log(result);
                 this.setState({ballot: result});
             })
             .catch((err) => console.log(err))
 
         ArticleModel.getAllArticles()
             .then((result) => {
-                console.log(result);
+                // console.log(result);
                 this.setState({articles: result});
             })
             .catch((err) => console.log(err))
     }
 
-    // createArticle = (article) => {
-    //     let newArticle = {
-    //         link: article,
-    //     };
-    //     ArticleModel.createArticle(newArticle).then((res) => {
-    //         let articles = this.state.articles;
-    //         let newArticles = articles.push(res.data);
-    //         this.setState({newArticles});
-    //     });
-    // };
-
     render() {
         return (
             <div className="panel">
                 <BallotId ballotid={this.state.ballot} />
-                {/* <CreateArticleForm createArticle={this.createArticle} /> */}
                 <CreateArticleForm ballotid={this.state.ballot._id}/>
-                <Articles articles={this.state.articles}/>
+                {/* <Articles articles={this.state.articles}/> */}
+                <News ballot={this.state.ballot} />
             </div>
              
         );

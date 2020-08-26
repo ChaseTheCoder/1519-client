@@ -6,6 +6,7 @@ function BallotId (props) {
 
     return (
         <div>
+            <p>{ballotid.type}</p>
             <p>{ballotid.question}</p>
         </div>
     )

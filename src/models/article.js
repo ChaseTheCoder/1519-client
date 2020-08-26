@@ -12,7 +12,7 @@ class ArticleModel {
     };
 
     static createArticle = (article, ballotid) => {
-        article.ballotid = ballotid;
+        article.bollot = ballotid;
         return fetch(url, {
             method: 'POST',
             headers: {
