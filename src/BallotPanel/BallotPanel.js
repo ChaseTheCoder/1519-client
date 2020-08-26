@@ -4,6 +4,7 @@ import '../Panel/Panel.css';
 
 export default function BallotPanel(props) {
     const ballotList = props.ballots.map((ballotObj) => {
+        console.log(ballotObj)
         return <Ballot key={ballotObj._id}ballot={ballotObj} />
     });
 
