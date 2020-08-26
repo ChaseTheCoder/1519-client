@@ -9,7 +9,7 @@ import CreateArticleForm from '../Articles/ArticleCreate';
 class BallotShowPage extends React.Component {
     state = {
         ballot: {},
-        // articles: []
+        articles: []
     };
 
     componentDidMount() {
@@ -44,7 +44,7 @@ class BallotShowPage extends React.Component {
             <div className="panel">
                 <BallotId ballotid={this.state.ballot} />
                 {/* <CreateArticleForm createArticle={this.createArticle} /> */}
-                <CreateArticleForm />
+                <CreateArticleForm ballotid={this.state.ballot._id}/>
                 <Articles articles={this.state.articles}/>
             </div>
              

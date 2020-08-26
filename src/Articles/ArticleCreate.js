@@ -17,7 +17,7 @@ class CreateArticleForm extends Component {
   
   onFormSubmit = (event) => {
     event.preventDefault();
-    ArticleModel.createArticle(this.state)
+    ArticleModel.createArticle(this.state, this.props.ballotid)
         .then((result) => {
             console.log(result);
         });
@@ -39,6 +39,7 @@ class CreateArticleForm extends Component {
             name="link"
             value={this.state.link}
           />
+          {/* <input hidden name="ballotid" value={this.props.ballotid}/> */}
           <button type="submit" id="addArticle" className="btn">Post</button>
         </form>
       </div>

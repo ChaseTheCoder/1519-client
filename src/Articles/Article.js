@@ -4,7 +4,7 @@ function Article (props) {
     const { article } = props;
     console.log(article);
     return (
-            <p>{article.link}</p>
+            <a href={article.link}><p>{article.link}</p></a>
     )
 }
 

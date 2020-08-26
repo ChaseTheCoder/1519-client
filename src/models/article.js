@@ -11,7 +11,8 @@ class ArticleModel {
             .then((response) => response.json())
     };
 
-    static createArticle = (article) => {
+    static createArticle = (article, ballotid) => {
+        article.ballotid = ballotid;
         return fetch(url, {
             method: 'POST',
             headers: {
