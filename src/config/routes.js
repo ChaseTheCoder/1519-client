@@ -14,7 +14,7 @@ export default (
         <Route path='/about' component={About} />
         <Route path='/ballot/:id' component={BallotShow} />
         <Route exact path='/ballot' component={BallotList} />
-        <Route path='/feed' component={Feed} />
+        <Route exact path='/feed' component={Feed} />
         <Route path='/login' component={Login} />
         <Route path='/profile' component={Profile} />
     </Switch>
