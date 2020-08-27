@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutPanel from '../AboutPanel/AboutPanel';
 
-class About extends React.Component {
+class AboutPage extends React.Component {
     render() {
         return (
             <div>
@@ -11,4 +11,4 @@ class About extends React.Component {
     };
 }
 
-export default About;
+export default AboutPage;
