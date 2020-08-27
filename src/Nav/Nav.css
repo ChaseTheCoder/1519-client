@@ -5,24 +5,19 @@ nav {
 	position: fixed;
 	width: 100vw;
 	z-index: 100;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 nav li {
-  display: inline-block;
-  float: left;
+  display: inline;
+  /* float: left; */
 }
 
 nav a {
   text-decoration: none;
   color: #2A76FE;
-  /* font-style: normal; */
   font-weight: bolder;
   font-size: 22px;
-  /* font-weight: 600; */
-  /* letter-spacing: 0.75px; */
-  /* letter-spacing: .05rem; */
-  /* padding: 1px 60px; */
   padding: .2rem 1rem;
   display: inline-block;
   border-bottom: none;
@@ -32,13 +27,15 @@ nav a {
 #logo {
   font-family: 'Bungee Shade', cursive;
   font-size: 3em;
+  margin: 0;
+  padding: 0;
 }
 
 span {
 	color: #F80D03;
   }
 
-.route {
+.route-list {
 	float: right;
 	margin: 0 20px 0 0;
 }
