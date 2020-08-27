@@ -4,12 +4,13 @@ import '../Panel/Panel.css';
 
 function News (props) {
     console.log(props.news);
-    let newsList = null;
-
+    let newsList = props.news ? props.news : [];
+    let result = newsList.map((newsObj, i) => {
+        return <Newx key={i} articlelink={newsObj.link} article={newsObj.link}/>
+    })
     return (
         <div>
-            <p>{newsList}</p>
-            {/* <Newx article={props.news}/> */}
+            <p>{result}</p>
         </div>
     )
 }
