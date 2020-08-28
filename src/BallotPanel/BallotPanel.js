@@ -10,7 +10,7 @@ export default function BallotPanel(props) {
 
     return(
         <div className="panel">
-            <h1>Candidates</h1>
+            <h1 className="heading">Candidates</h1>
             {ballotList}
         </div>
     );

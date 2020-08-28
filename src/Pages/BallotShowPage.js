@@ -1,11 +1,10 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import BallotId from '../Ballot/BallotId';
-// import Articles from '../Articles/Articles';
 import BallotModel from '../models/ballot';
-// import ArticleModel from '../models/article';
 import CreateArticleForm from '../Articles/ArticleCreate';
 import News from '../News/News';
+import './BallotShowPage.css'
 
 class BallotShowPage extends React.Component {
     state = {

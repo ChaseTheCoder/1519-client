@@ -6,8 +6,8 @@ function BallotId (props) {
 
     return (
         <div>
-            <p>{ballotid.type}</p>
-            <p>{ballotid.question}</p>
+            <h1 className="heading">{ballotid.type}</h1>
+            <p className="sub-heading">{ballotid.question}</p>
         </div>
     )
 }

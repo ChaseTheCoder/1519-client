@@ -3,9 +3,14 @@ import '../Panel/Panel.css';
 
 export default function AboutPanel() {
     return(
-        <div className="panel">
-            <image className="header-about" src='../img/AboutHeader.jpg' />
-            <h1>about</h1>
+        <div>
+            <img src='../img/header.jpg' />
+            <div className="panel">
+                <div className="cropped">
+                    <p>hello</p>
+                </div>
+                
+            </div>
         </div>
     );
 }

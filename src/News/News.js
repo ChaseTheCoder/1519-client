@@ -9,23 +9,8 @@ function News (props) {
         return <Newx key={i} articlelink={newsObj.link} article={newsObj.link}/>
     })
     return (
-        <div>
-            <p>{result}</p>
-        </div>
+            <p className="links">{result}</p>
     )
 }
 
 export default News;
-
-// export default function Articles(props) {
-//     // console.log(props);
-//     const articleList = props.articles.map((articleObj) => {
-//         return <Article key={articleObj._id} article={articleObj} />
-//     });
-
-//     return(
-//         <div>
-//             {articleList}
-//         </div>
-//     );
-// }
