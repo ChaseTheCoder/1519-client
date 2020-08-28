@@ -11,7 +11,7 @@ class FeedPage extends React.Component {
     componentDidMount() {
         ArticleModel.getAllArticles()
             .then((result) => {
-                console.log(result);
+                // console.log(result);
                 this.setState({articles: result});
             })
             .catch((err) => console.log(err))
