@@ -9,7 +9,7 @@ function News (props) {
         return <Newx key={i} articlelink={newsObj.link} article={newsObj.link}/>
     })
     return (
-            <p className="links">{result}</p>
+            <div className="links">{result}</div>
     )
 }
 

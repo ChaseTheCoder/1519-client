@@ -1,19 +1,18 @@
 import React from 'react';
 import ArticleModel from '../models/article';
-import './Article.css'
 
 function Article (props) {
     const { article } = props;
     console.log(article);
     const handleDelete = () => {
         ArticleModel.deleteArticle(article._id)
-          .then((result) => props.history.push('/feed'))
+          .then(window.location.reload(false))
           .catch((err) => console.log(err));
       };
     return (
-        <div>
+        <div className="link-card">
             <a href={article.link}><p className="link-feed">{article.link}</p></a>
-            <button className='delete' onClick={handleDelete}>Delete</button>
+            <button className='delete-feed' onClick={handleDelete}>Delete</button>
         </div>
     )
 }

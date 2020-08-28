@@ -3,3 +3,42 @@
     margin: 0;
 }
 
+.about-body {
+    text-decoration: none;
+    padding: none;
+    margin: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 21px;
+}
+.about-body-heading {
+    font-family: 'Bungee';
+    color: #2A76FE;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 30px;
+    /* line-height: 22px; */
+}
+
+.heading-container {
+    margin: 70px 0 70px 0;
+}
+
+.top-left {
+    float: right;
+    top: 8px;
+    left: 16px;
+  }
+
+.about-container {
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    color: white;
+  }

@@ -6,9 +6,11 @@ function Ballot (props) {
     const { ballot } = props;
 
     return (
-        <Link to={`/ballot/${ballot._id}`}>
-            <p className="link">{ballot.question}</p>
-        </Link>
+        <div className="ballot-card">
+            <Link to={`/ballot/${ballot._id}`}>
+                <p className="ballot-link">{ballot.question}</p>
+            </Link>
+        </div>
     )
 }
 

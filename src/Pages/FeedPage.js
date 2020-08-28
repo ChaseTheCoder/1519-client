@@ -20,8 +20,8 @@ class FeedPage extends React.Component {
     render() {
         return (
             <div className="panel">
-                <h1>Ballot News Feed</h1>
-                <Articles articles={this.state.articles}/>
+                <h1 className="heading-feed">Ballot News Feed</h1>
+                <Articles articles={this.state.articles} />
             </div>
         );
     }
