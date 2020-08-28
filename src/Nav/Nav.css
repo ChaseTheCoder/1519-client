@@ -2,10 +2,15 @@
 /* ------------Nav------------ */
 
 nav {
+  background-color: rgb(187, 226, 254, 0.7);
 	position: fixed;
 	width: 100vw;
 	z-index: 100;
   overflow: hidden;
+}
+
+ul {
+  margin: 0;
 }
 
 nav li {
@@ -14,6 +19,7 @@ nav li {
 }
 
 nav a {
+  margin: 0;
   text-decoration: none;
   color: #2A76FE;
   font-weight: bolder;
@@ -37,7 +43,7 @@ span {
 
 .route-list {
 	float: right;
-	margin: 0 20px 0 0;
+	margin: 15px 20px 0 0;
 }
 
 #route:hover {

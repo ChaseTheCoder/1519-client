@@ -35,8 +35,7 @@ class CreateArticleForm extends Component {
             placeholder="Input article URL..." 
             name="link"
             value={this.state.link}
-          />
-          {/* <input hidden name="ballotid" value={this.props.ballotid}/> */}
+          /> <br/>
           <button type="submit" id="addArticle" className="btn">Post</button>
         </form>
       </div>

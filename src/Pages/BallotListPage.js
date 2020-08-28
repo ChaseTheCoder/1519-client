@@ -1,6 +1,7 @@
 import React from 'react'
 import BallotModel from '../models/ballot';
 import BallotPanel from '../BallotPanel/BallotPanel';
+import './BallotListPage.css'
 
  class BallotListPage extends React.Component {
      state = {

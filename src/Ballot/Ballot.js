@@ -7,7 +7,7 @@ function Ballot (props) {
 
     return (
         <Link to={`/ballot/${ballot._id}`}>
-            <p>{ballot.question}</p>
+            <p className="link">{ballot.question}</p>
         </Link>
     )
 }
