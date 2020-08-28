@@ -1,6 +1,7 @@
 import React from 'react';
 import ArticleModel from '../models/article';
 import Articles from '../Articles/Articles';
+import './FeedPage.css';
 
 class FeedPage extends React.Component {
     state = {
