@@ -1,0 +1,45 @@
+
+/* ------------Nav------------ */
+
+nav {
+	position: fixed;
+	width: 100vw;
+	z-index: 100;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+  /* float: left; */
+}
+
+nav a {
+  text-decoration: none;
+  color: #2A76FE;
+  font-weight: bolder;
+  font-size: 22px;
+  padding: .2rem 1rem;
+  display: inline-block;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+#logo {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+	color: #F80D03;
+  }
+
+.route-list {
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+#route:hover {
+  color: #F80D03;
+}
