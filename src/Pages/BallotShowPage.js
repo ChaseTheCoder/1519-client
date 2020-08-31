@@ -14,7 +14,7 @@ class BallotShowPage extends React.Component {
     componentDidMount() {
         BallotModel.getBallotById(this.props.match.params.id)
             .then((result) => {
-                // console.log(result);
+                console.log("results", result);
                 this.setState({ballot: result});
             })
             .catch((err) => console.log(err))
@@ -27,11 +27,6 @@ class BallotShowPage extends React.Component {
                 <BallotId ballotid={this.state.ballot} />
                 <CreateArticleForm ballotid={this.state.ballot._id}/>
                 <News news={this.state.ballot.articles} />
-                <div>
-                    <p className="link">https://www.nbcchicago.com/news/local/chicago-politics/kanye-west-kicked-off-illinois-ballots-in-presidential-race/2326172/</p>
-                    <p className="link">https://www.washingtonpost.com/politics/biden-federal-workers-unions/2020/08/26/62595932-e71c-11ea-a414-8422fa3e4116_story.html</p>
-                    <p className="link">https://www.cnn.com/2020/08/07/us/allan-lichtman-trump-biden-2020-trnd/index.html</p>
-                </div>
             </div>
              
         );
