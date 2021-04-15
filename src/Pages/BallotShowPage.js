@@ -21,7 +21,6 @@ class BallotShowPage extends React.Component {
     }
 
     render() {
-        console.log(this.state.ballot);
         return (
             <div className="panel">
                 <BallotId ballotid={this.state.ballot} />
