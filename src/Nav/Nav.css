@@ -22,7 +22,7 @@ nav a {
   margin: 0;
   text-decoration: none;
   color: #2A76FE;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 22px;
   padding: .2rem 1rem;
   display: inline-block;

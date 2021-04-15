@@ -2,5 +2,12 @@ body {
     margin: 0;
     background-color: #BBE2FE;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+}
+
+a {
+    text-decoration:  none !important;
+  }
+
+a:hover {
+    text-shadow: 5px grey;
 }

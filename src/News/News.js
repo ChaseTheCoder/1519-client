@@ -3,13 +3,13 @@ import Newx from './Newx';
 import '../Panel/Panel.css';
 
 function News (props) {
-    console.log(props.news);
+    console.log("news result", props.news);
     let newsList = props.news ? props.news : [];
     let result = newsList.map((newsObj, i) => {
         return <Newx key={i} articlelink={newsObj.link} article={newsObj.link}/>
     })
     return (
-            <p className="links">{result}</p>
+            <div className="links">{result}</div>
     )
 }
 

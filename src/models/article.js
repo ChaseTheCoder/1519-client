@@ -25,6 +25,7 @@ class ArticleModel {
     };
 
     static updateArticle = (article, id) => {
+        console.log(`deleting ${article.link}`)
         return fetch(`${url}/${id}`, {
             method: 'PUT',
             headers: {
@@ -37,14 +38,16 @@ class ArticleModel {
     };
 
     static deleteArticle = (id) => {
-        return fetch(`${url}/${id}`, {
+        console.log("deleting article")
+        let request = fetch(`${url}/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
                 //auth
           },
         })
-          .then((response) => response.json())
+        return request;
+        //   .then((response) => response.json())
     }; 
 }
 

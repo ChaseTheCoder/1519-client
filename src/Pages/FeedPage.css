@@ -1,0 +1,40 @@
+.heading-feed {
+    font-family: 'Bungee Shade', cursive;
+    color: #F80D03;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.link-card {
+    margin: 30px;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.delete-feed {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #BBE2FE;
+}
+
+.delete-feed:hover {
+    color: #2A76FE;
+}
+
+.link-feed {
+    padding: none;
+    margin: none;
+    text-decoration: none !important;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 21px;
+}
