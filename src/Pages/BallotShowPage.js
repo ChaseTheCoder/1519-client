@@ -14,7 +14,7 @@ class BallotShowPage extends React.Component {
     componentDidMount() {
         BallotModel.getBallotById(this.props.match.params.id)
             .then((result) => {
-                // console.log(result);
+                console.log("results", result);
                 this.setState({ballot: result});
             })
             .catch((err) => console.log(err))
