@@ -17,11 +17,7 @@ class CreateArticleForm extends Component {
   
   onFormSubmit = (event) => {
     event.preventDefault();
-    ArticleModel.createArticle(this.state, this.props.ballot)
-        .then((result) => {
-            console.log(result);
-        });
-    console.log(this.props)
+    ArticleModel.createArticle(this.state, this.props.ballotid)
   };
   
   render() {

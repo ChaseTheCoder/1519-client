@@ -6,7 +6,7 @@ function Article (props) {
     console.log(article);
     const handleDelete = () => {
         ArticleModel.deleteArticle(article._id)
-          .then(window.location.reload(false))
+          .then(window.location.reload(false)) // hard window reload BAD
           .catch((err) => console.log(err));
       };
     return (

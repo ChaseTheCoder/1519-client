@@ -1,4 +1,4 @@
-const url = 'http://localhost:4000/api/v1/article'
+const url = 'https://ballot-api.herokuapp.com/api/v1/article'
 
 class ArticleModel {
     static getAllArticles = () => {
@@ -12,8 +12,8 @@ class ArticleModel {
     };
 
     static createArticle = (article, ballotid) => {
-        article.bollot = ballotid;
-        return fetch(url, {
+        console.log(article);
+        return fetch(`${url}/${ballotid}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
